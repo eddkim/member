@@ -7,5 +7,17 @@ nav ul li {display : inline-block; margin:10px;
     border-top : 3px solid #333; padding:10px;}
 nav ul li a {text-decoration : none; color:#000}
 nav ul li:hover{background-color:#eee}
+
+/*인덱스 스타일*/
 section {text-align:center}
 section h2{margin-bottom : 20px;}
+
+/* memberlist 스타일*/
+section table{width:600px; margin:0 auto; border-collapse:collapse}
+section h1{margin-bottom : 20px;}
+section table, th,td {border : 1px solid #ccc; padding:10px}
+section table th{background-color : #eee}
+
+/*멤버리스트 스타일*/
+section .tbl_view{width:450px;}
+section .tbl_view input{width:200px; height:30px}
