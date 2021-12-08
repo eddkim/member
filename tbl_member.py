@@ -16,7 +16,6 @@ def create_table():
         regDate DATETIME DEFAULT CURRENT_TIMESTAMP
     );
     """
-
     cur.execute(sql)
     conn.commit()
     print("member 테이블 생성")
@@ -26,7 +25,7 @@ def insert_member ():
     conn = getconn()
     cur = conn.cursor()
     sql = "INSERT INTO member(mid,passwd,name,age) VALUES(?,?,?,?)"
-    cur.execute(sql,('10002','m1234','팥쥐',19))
+    cur.execute(sql,('20001','m1234','팥쥐',19))
     conn.commit()
     print("멤버추가")
     conn.close()
