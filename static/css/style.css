@@ -53,3 +53,10 @@ section .tbl_member_edit input{width:200px; height:30px}
 section .tbl_member_edit input[type='submit']{width:100px; height:30px;}
 section .tbl_member_edit input[type='reset']{width:100px; height:30px;}
 
+/* boardlist 스타일 */
+section .btn_write{text-align: right, margin:15px 200px;}
+section .btn_write input{padding: 10px 20px;}
+
+/* writing 스타일 */
+section
+

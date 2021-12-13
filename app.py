@@ -140,4 +140,20 @@ def member_edit(id):
         else:
             return render_template('member_edit.html')
 
+@app.route('/boardlist/')
+def boardlist():
+    conn = getconn()
+    cur = conn.cursor()
+    sql = "SELECT * FROM board"
+    cur.execute(sql)
+    rs = cur.fetchall()
+    print(rs)
+    conn.close()
+    return render_template('boardlist.html',rs=rs)
+
+@app.route('/writing/')
+def writing():
+    return render_template('writing.html')
+
+
 app.run(debug=True)

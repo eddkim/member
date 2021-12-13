@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시글 쓰기</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css') }}">
+</head>
+</head>
+<body>
+    <div id="container">
+        {% include 'navbar.html' %}
+        <section>
+            <h1>게시글 쓰기</h1>
+            <form action="{{ url_for('writing') }}" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="title" placeholder="글 제목">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
